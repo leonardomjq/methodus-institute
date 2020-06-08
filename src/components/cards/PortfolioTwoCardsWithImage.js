@@ -14,11 +14,13 @@ const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const ThreeColumn = tw.div`flex flex-wrap`;
 const Column = tw.div`xl:mr-12 xl:last:mr-0`;
-const HeadingColumn = styled(Column)(props => [
+const HeadingColumn = styled(Column)((props) => [
   tw`w-full xl:w-5/12`,
-  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`
+  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`,
 ]);
-const CardColumn = tw(Column)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
+const CardColumn = tw(
+  Column
+)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
 
 const HeadingInfoContainer = tw.div`text-center xl:text-left max-w-lg xl:max-w-none mx-auto xl:mx-0`;
 const HeadingTitle = tw(SectionHeading)`mt-4 xl:text-left leading-tight`;
@@ -31,9 +33,9 @@ const PrimaryLink = styled(PrimaryLinkBase)`
 `;
 
 const Card = tw.div`mx-auto xl:mx-0 xl:ml-auto max-w-sm md:max-w-xs lg:max-w-sm xl:max-w-xs`;
-const CardImage = styled.div(props => [
+const CardImage = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
-  tw`h-80 bg-cover bg-center rounded`
+  tw`h-80 bg-cover bg-center rounded`,
 ]);
 
 const CardText = tw.div`mt-4`;
@@ -66,7 +68,7 @@ export default ({
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
   linkText = "View all Projects",
   cardLinkText = "Read Case Study",
-  textOnLeft = false
+  textOnLeft = false,
 }) => {
   const cards = [
     {
@@ -76,7 +78,7 @@ export default ({
       type: "Ad Campaign",
       title: "Personalized Ad Campaign using Google AdWords",
       durationText: "90 Days Campaign",
-      locationText: "New York"
+      locationText: "New York",
     },
     {
       imageSrc:
@@ -85,8 +87,8 @@ export default ({
       type: "SEO Marketing",
       title: "Ranking #1 for keywords like Chocolate, Snack",
       durationText: "180 Day Campaign",
-      locationText: "Palo Alto"
-    }
+      locationText: "Palo Alto",
+    },
   ];
   return (
     <Container>
