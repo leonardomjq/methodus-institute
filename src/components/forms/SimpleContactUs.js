@@ -65,6 +65,15 @@ export default () => {
                       placeholder="Ex. leonardo@mail.com"
                     />
                   </InputContainer>
+                  <InputContainer>
+                    <Label htmlFor="company-input">Sua Empresa</Label>
+                    <Input
+                      id="company-input"
+                      type="text"
+                      name="company"
+                      placeholder="Nome da Empresa"
+                    />
+                  </InputContainer>
                 </Column>
                 <Column>
                   <InputContainer tw="flex-1">
@@ -72,7 +81,7 @@ export default () => {
                     <TextArea
                       id="message-input"
                       name="message"
-                      placeholder="Ex. Minha empresa (nome) gostaria de fazer ..."
+                      placeholder="Tenho interesse em uma pesquisa para ..."
                     />
                   </InputContainer>
                 </Column>

@@ -8,6 +8,7 @@ import AboutUs from "pages/AboutUs";
 import Clients from "pages/Clients";
 import ContactUs from "pages/ContactUs";
 import Cotation from "pages/Cotation";
+import BlogIndex from "pages/BlogIndex";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route exact path="/clientes" component={Clients} />
         <Route exact path="/faleconosco" component={ContactUs} />
         <Route exact path="/cotacao" component={Cotation} />
+        <Route exact path="/midia" component={BlogIndex} />
         <Route exact path="/" component={Home} />
       </Switch>
     </Router>

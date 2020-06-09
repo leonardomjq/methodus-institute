@@ -61,6 +61,7 @@ export const defaultLinks = [
     <NavLink href="/sobre">Sobre</NavLink>
     <NavLink href="/clientes">Clientes</NavLink>
     <NavLink href="/faleconosco">Fale Conosco</NavLink>
+    <NavLink href="/midia">Na Mídia</NavLink>
   </NavLinks>,
   <NavLinks key={2}>
     <PrimaryLink href="/#cotacao">COTAÇÃO</PrimaryLink>

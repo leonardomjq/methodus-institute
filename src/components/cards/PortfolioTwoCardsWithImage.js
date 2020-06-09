@@ -8,6 +8,8 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin.svg";
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
+import { Link } from "react-router-dom";
+import cogoToast from "cogo-toast";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -25,6 +27,7 @@ const CardColumn = tw(
 const HeadingInfoContainer = tw.div`text-center xl:text-left max-w-lg xl:max-w-none mx-auto xl:mx-0`;
 const HeadingTitle = tw(SectionHeading)`mt-4 xl:text-left leading-tight`;
 const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-8`;
+
 const PrimaryLink = styled(PrimaryLinkBase)`
   ${tw`inline-flex justify-center xl:justify-start items-center mt-8 text-lg`}
   svg {
@@ -65,29 +68,35 @@ export default ({
       Nos fizemos alguns <span tw="text-primary-500">projetos incriveis.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
-  linkText = "View all Projects",
-  cardLinkText = "Read Case Study",
+  description = "Acompanhe alguns de nossos trabalhos que apareceram na midia gaucha e nacional.",
+  linkText = "Veja Todos",
+  linkUrl = "/midia",
+  cardLinkText = "Veja Este Projeto",
   textOnLeft = false,
 }) => {
   const cards = [
     {
       imageSrc:
         "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Tesla Inc.",
-      type: "Ad Campaign",
-      title: "Personalized Ad Campaign using Google AdWords",
-      durationText: "90 Days Campaign",
-      locationText: "New York",
+      company: "Correio do Povo",
+      type: "Pesquisa Eleitoral",
+      title:
+        "Ao menos 19 capitais têm mulheres cotadas para eleições municipais de 2020",
+      durationText: "09 Mar 2020",
+      locationText: "Porto Alegre",
+      url:
+        "https://www.uol.com.br/universa/noticias/redacao/2020/03/06/aos-menos-19-capitais-tem-mulheres-cotadas-para-eleicoes-municipais-de-2020.htm",
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Nestle",
-      type: "SEO Marketing",
-      title: "Ranking #1 for keywords like Chocolate, Snack",
-      durationText: "180 Day Campaign",
-      locationText: "Palo Alto",
+      company: "Correio do Povo",
+      type: "Pesquisa Eleitoral",
+      title: "Pesquisa eleitoral em Porto Alegre - Eleições 2020",
+      durationText: "08 Out 2019",
+      locationText: "Porto Alegre",
+      url:
+        "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/pesquisa-mostra-cen%C3%A1rios-para-porto-alegre-1.371013",
     },
   ];
   return (
@@ -99,7 +108,7 @@ export default ({
               <Subheading>{subheading}</Subheading>
               <HeadingTitle>{headingHtmlComponent}</HeadingTitle>
               <HeadingDescription>{description}</HeadingDescription>
-              <PrimaryLink>
+              <PrimaryLink href={linkUrl}>
                 {linkText} <ArrowRightIcon />
               </PrimaryLink>
             </HeadingInfoContainer>
@@ -122,7 +131,15 @@ export default ({
                       <LocationIcon /> {card.locationText}
                     </CardMetaFeature>
                   </CardMeta>
-                  <CardAction>{cardLinkText}</CardAction>
+                  cogoToast.info(
+                  <div>
+                    <b>Awesome!</b>
+                    <div>Isn't it?</div>
+                  </div>
+                  );
+                  <Link to={{ pathname: card.url }} target="_blank">
+                    <CardAction>{cardLinkText}</CardAction>
+                  </Link>
                 </CardText>
               </Card>
             </CardColumn>
