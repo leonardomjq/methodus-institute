@@ -9,7 +9,6 @@ import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 import { Link } from "react-router-dom";
-import cogoToast from "cogo-toast";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -59,6 +58,7 @@ const CardMetaFeature = styled.div`
     ${tw`w-5 h-5 mr-1`}
   }
 `;
+
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 
 export default ({
@@ -131,12 +131,6 @@ export default ({
                       <LocationIcon /> {card.locationText}
                     </CardMetaFeature>
                   </CardMeta>
-                  cogoToast.info(
-                  <div>
-                    <b>Awesome!</b>
-                    <div>Isn't it?</div>
-                  </div>
-                  );
                   <Link to={{ pathname: card.url }} target="_blank">
                     <CardAction>{cardLinkText}</CardAction>
                   </Link>
