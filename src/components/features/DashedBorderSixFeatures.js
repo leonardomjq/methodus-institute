@@ -10,10 +10,6 @@ import defaultCardImage from "../../images/shield-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
 
 import SupportIconImage from "../../images/support-icon.svg";
-import ShieldIconImage from "../../images/shield-icon.svg";
-import CustomizeIconImage from "../../images/customize-icon.svg";
-import FastIconImage from "../../images/fast-icon.svg";
-import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
 
 const Container = tw.div`relative`;
@@ -55,7 +51,8 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 
 export default () => {
   /*
-   * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
+   * This componets has an array of object denoting the cards defined below. 
+   Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
    *  1) imageSrc - the image shown at the top of the card
    *  2) title - the title of the card
    *  3) description - the description of the card
@@ -64,21 +61,25 @@ export default () => {
 
   const cards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Ads Management",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      imageSrc: SimpleIconImage,
+      title: "Político & Eleitoral",
+      description:
+        "Somos especialistas em inteligência política e pesquisas eleitorais, com isenção ideológica, confiança e entendimento do ciclo político do candidato, além de credibilidade na mídia.",
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    {
+      imageSrc: SupportIconImage,
+      title: "Corporativo",
+      description:
+        "Sabemos que uma boa ideia precisa ser testada e validada pelo consumidor o tempo todo, devido a mudanças de hábito, cenário econômico e satisfação do cliente. Por isso, as pesquisas são decisivas para orientar o rumo dos negócios.",
+    },
   ];
 
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        <Heading>
+          Nossos <span tw="text-primary-500">Serviços</span> Profissionais
+        </Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
@@ -88,7 +89,7 @@ export default () => {
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
+                  {card.description || "lorem ipsum"}
                 </p>
               </span>
             </Card>

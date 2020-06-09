@@ -7,18 +7,18 @@ import Home from "pages/Home";
 import AboutUs from "pages/AboutUs";
 import Clients from "pages/Clients";
 import ContactUs from "pages/ContactUs";
+import Cotation from "pages/Cotation";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/sobre" component={AboutUs} />
         <Route exact path="/clientes" component={Clients} />
         <Route exact path="/faleconosco" component={ContactUs} />
+        <Route exact path="/cotacao" component={Cotation} />
         <Route exact path="/" component={Home} />
       </Switch>
     </Router>
   );
 }
-
-export default App;

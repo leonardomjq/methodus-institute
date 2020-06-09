@@ -6,7 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo-mt.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -34,7 +34,7 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-xl! ml-0!`};
 
   img {
     ${tw`w-10 mr-3`}
@@ -56,6 +56,17 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
+export const defaultLinks = [
+  <NavLinks key={1}>
+    <NavLink href="/sobre">Sobre</NavLink>
+    <NavLink href="/clientes">Clientes</NavLink>
+    <NavLink href="/faleconosco">Fale Conosco</NavLink>
+  </NavLinks>,
+  <NavLinks key={2}>
+    <PrimaryLink href="/#cotacao">COTAÇÃO</PrimaryLink>
+  </NavLinks>,
+];
+
 export default ({
   roundedHeaderButton = false,
   logoLink,
@@ -76,16 +87,6 @@ export default ({
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
-  const defaultLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/sobre">Sobre</NavLink>
-      <NavLink href="/clientes">Clientes</NavLink>
-      <NavLink href="/faleconosco">Fale Conosco</NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">Hire Us</PrimaryLink>
-    </NavLinks>,
-  ];
 
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const collapseBreakpointCss =
@@ -94,7 +95,7 @@ export default ({
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Treact
+      Instituto Methodus
     </LogoLink>
   );
 

@@ -4,14 +4,14 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header, {
   NavLink,
-  NavLinks,
-  PrimaryLink,
   LogoLink,
   NavToggle,
   DesktopNavLinks,
 } from "../headers/light.js";
+import { Link } from "react-router-dom";
 
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import { defaultLinks } from "components/headers/light";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -63,33 +63,24 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/sobre">Sobre</NavLink>
-      <NavLink href="/clientes">Clientes</NavLink>
-      <NavLink href="/faleconosco">Fale Conosco</NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">Hire Us</PrimaryLink>
-    </NavLinks>,
-  ];
-
   return (
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader links={defaultLinks} />
         <TwoColumn>
           <LeftColumn>
             <Notification>
-              We have now launched operations in Europe.
+              COVID-19: Estamos de volta em atividade.
             </Notification>
             <Heading>
-              <span>Hire the best</span>
+              <span>Contrate o melhor</span>
               <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
+              <SlantedBackground>Time de Pesquisa.</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            <Link to="/clientes">
+              <PrimaryAction>Nossos Clientes</PrimaryAction>
+            </Link>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed
