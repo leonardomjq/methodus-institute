@@ -1,26 +1,23 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "style.css";
 import "tailwindcss/dist/base.css";
-import AnimationRevealPage from "helpers/AnimationRevealPage";
-import Hero from "components/hero/BackgroundAsImage";
-import Cards from "components/cards/PortfolioTwoCardsWithImage";
-import FeaturesTwo from "components/features/DashedBorderSixFeatures";
-import FeaturesOne from "components/features/TwoColSingleFeatureWithStats2";
-import Testimonials from "components/testimonials/TwoColumnWithImageAndRating";
-import Footer from "components/footers/FiveColumnDark";
-import Forms from "components/forms/SimpleContactUs";
+
+import Home from "pages/Home";
+import AboutUs from "pages/AboutUs";
+import Clients from "pages/Clients";
+import ContactUs from "pages/ContactUs";
 
 function App() {
   return (
-    <AnimationRevealPage>
-      <Hero />
-      <FeaturesOne />
-      <FeaturesTwo />
-      <Forms />
-      <Cards />
-      <Testimonials />
-      <Footer />
-    </AnimationRevealPage>
+    <Router>
+      <Switch>
+        <Route exact path="/sobre" component={AboutUs} />
+        <Route exact path="/clientes" component={Clients} />
+        <Route exact path="/faleconosco" component={ContactUs} />
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
