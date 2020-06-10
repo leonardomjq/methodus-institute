@@ -9,10 +9,10 @@ import Header, {
   DesktopNavLinks,
 } from "../headers/light.js";
 import { Link } from "react-router-dom";
-
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import { defaultLinks } from "components/headers/light";
 
+// CONSTS
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
@@ -35,14 +35,14 @@ const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
+  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-4xl xl:text-5xl font-black text-gray-100 leading-none`}
   span {
     ${tw`inline-block mt-2`}
   }
 `;
 
 const SlantedBackground = styled.span`
-  ${tw`relative text-primary-500 px-4 -mx-4 py-2`}
+  ${tw`relative text-primary-600 px-4 -mx-4 py-2`}
   &::before {
     content: "";
     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
@@ -74,19 +74,17 @@ export default () => {
               COVID-19: Estamos de volta em atividade.
             </Notification>
             <Heading>
-              <span>Contrate o melhor</span>
+              <span>Contrate a melhor</span>
               <br />
-              <SlantedBackground>Time de Pesquisa.</SlantedBackground>
+              <SlantedBackground>Pesquisa de Mercado</SlantedBackground>
             </Heading>
             <Link to="/clientes">
               <PrimaryAction>Nossos Clientes</PrimaryAction>
             </Link>
           </LeftColumn>
           <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
-              background="transparent"
-            />
+            {/* was video, now img */}
+            <StyledResponsiveVideoEmbed url="https://images.unsplash.com/flagged/photo-1573162915835-520ee6d112b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80" />
           </RightColumn>
         </TwoColumn>
       </HeroContainer>

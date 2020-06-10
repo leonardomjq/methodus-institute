@@ -50,7 +50,7 @@ export default ({
   subheading = "Siga Nossa Jornada",
   heading = (
     <>
-      Porque fazemos isso <br /> a <span tw="text-primary-500">15</span> anos.
+      Porque fazemos isso <br /> a <span tw="text-primary-500">25</span> anos.
     </>
   ),
   description = "Somos mais do que um instituto de pesquisas. Somos observadores do comportamento humano, gostamos de ouvir as pessoas e entender exatamente o que elas querem de um produto ou de um candidato. Nosso trabalho é personalizado e contamos com uma equipe experiente de recrutadores e com tecnologia de ponta.",
