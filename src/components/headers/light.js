@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
+import { HashLink as Link } from "react-router-hash-link";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
@@ -58,13 +59,24 @@ export const DesktopNavLinks = tw.nav`
 
 export const defaultLinks = [
   <NavLinks key={1}>
-    <NavLink href="/sobre">Sobre</NavLink>
-    <NavLink href="/clientes">Clientes</NavLink>
-    <NavLink href="/faleconosco">Fale Conosco</NavLink>
-    <NavLink href="/midia">Na Mídia</NavLink>
+    <NavLink>
+      <Link to="/sobre">Sobre</Link>
+    </NavLink>
+    <NavLink>
+      <Link to="/clientes">Clientes</Link>
+    </NavLink>
+    <NavLink>
+      <Link to="/faleconosco">Fale Conosco</Link>
+    </NavLink>
+
+    <NavLink>
+      <Link to="/midia">Na Mídia</Link>
+    </NavLink>
   </NavLinks>,
   <NavLinks key={2}>
-    <PrimaryLink href="/#cotacao">COTAÇÃO</PrimaryLink>
+    <Link exact to="/#cotacao">
+      <PrimaryLink>COTAÇÃO</PrimaryLink>
+    </Link>
   </NavLinks>,
 ];
 
