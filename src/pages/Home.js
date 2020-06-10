@@ -8,19 +8,21 @@ import FeaturesOne from "components/features/TwoColSingleFeatureWithStats2";
 import FeaturesTwo from "components/features/OurServices";
 import Forms from "components/forms/SimpleContactUs";
 import Cards from "components/cards/PortfolioTwoCardsWithImage";
-// import Testimonials from "components/testimonials/TwoColumnWithImage";
 import Footer from "components/footers/MiniCenteredFooter";
 
 export default function Home() {
   return (
-    <AnimationRevealPage>
-      <Hero />
-      <FeaturesOne />
-      <FeaturesTwo />
+    <div>
+      <AnimationRevealPage>
+        <Hero />
+        <FeaturesOne />
+        <FeaturesTwo />
+      </AnimationRevealPage>
       <Forms />
-      <Cards />
-      {/* <Testimonials /> */}
-      <Footer />
-    </AnimationRevealPage>
+      <AnimationRevealPage>
+        <Cards />
+        <Footer />
+      </AnimationRevealPage>
+    </div>
   );
 }

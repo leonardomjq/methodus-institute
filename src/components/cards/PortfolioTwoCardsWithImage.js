@@ -65,7 +65,7 @@ export default ({
   subheading = "Na Mídia",
   headingHtmlComponent = (
     <>
-      Nos fizemos alguns <span tw="text-primary-500">projetos incriveis.</span>
+      Nós fizemos alguns <span tw="text-primary-500">projetos incríveis.</span>
     </>
   ),
   description = "Acompanhe alguns de nossos trabalhos que apareceram na midia gaucha e nacional.",
@@ -77,7 +77,7 @@ export default ({
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+        "https://images.unsplash.com/photo-1563304997-8b95bace5a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
       company: "Correio do Povo",
       type: "Pesquisa Eleitoral",
       title:
@@ -89,7 +89,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+        "https://images.unsplash.com/photo-1591022360079-2f482b3e0b2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
       company: "Correio do Povo",
       type: "Pesquisa Eleitoral",
       title: "Pesquisa eleitoral em Porto Alegre - Eleições 2020",

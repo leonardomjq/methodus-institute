@@ -1,43 +1,49 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-//eslint-disable-next-line
-import { css } from "styled-components/macro";
+// import { css } from "styled-components/macro";
 import { SectionHeading } from "components/misc/Headings.js";
-
-import defaultCardImage from "../../images/shield-icon.svg";
-
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
 
-// PRIVATE
+// POLITICS
+import dem from "../../images/clients/politics/dem-logo.jpg";
+import pdt from "../../images/clients/politics/pdt-logo.jpg";
+import phs from "../../images/clients/politics/phs-logo.jpg";
+import pmdb from "../../images/clients/politics/pmdb-logo.jpg";
+import pp from "../../images/clients/politics/pp-logo.jpg";
+import pps from "../../images/clients/politics/pps-logo.jpg";
+import prb from "../../images/clients/politics/prb-logo.jpg";
+import psb from "../../images/clients/politics/psb-logo.jpg";
+import psdb from "../../images/clients/politics/psdb-logo.jpg";
+import ptb from "../../images/clients/politics/ptb-logo.jpg";
+import pv from "../../images/clients/politics/pv-logo.jpg";
 
-import agrale from "../../images/clients/private/agrale-logo.png";
-import band from "../../images/clients/private/band-logo.png";
-import braskem from "../../images/clients/private/braskem-logo.png";
-import competence from "../../images/clients/private/competence-logo.png";
-import correio from "../../images/clients/private/correio-logo.png";
-import detranrs from "../../images/clients/private/detranrs-logo.png";
-import fiergs from "../../images/clients/private/fiergs-logo.png";
-import morya from "../../images/clients/private/morya-logo.png";
-import multiplar from "../../images/clients/private/multiplar-logo.png";
-import nycomed from "../../images/clients/private/nycomed-logo.png";
-import odebrecht from "../../images/clients/private/odebrecht-logo.png";
-import paqueta from "../../images/clients/private/paqueta-logo.png";
-import pfizer from "../../images/clients/private/pfizer-logo.png";
-import procerg from "../../images/clients/private/procerg-logo.png";
-import sicredi from "../../images/clients/private/sicredi-logo.png";
-import solvi from "../../images/clients/private/solvi-logo.png";
-import stihl from "../../images/clients/private/stihl-logo.png";
-import trt4 from "../../images/clients/private/trt4-logo.png";
-import unimed from "../../images/clients/private/unimed-logo.png";
+// PRIVATE
+import agrale from "../../images/clients/private/agrale-logo.jpg";
+import band from "../../images/clients/private/band-logo.jpg";
+import braskem from "../../images/clients/private/braskem-logo.jpg";
+import competence from "../../images/clients/private/competence-logo.jpg";
+import correio from "../../images/clients/private/correio-logo.jpg";
+import detranrs from "../../images/clients/private/detranrs-logo.jpg";
+import fiergs from "../../images/clients/private/fiergs-logo.jpg";
+import morya from "../../images/clients/private/morya-logo.jpg";
+import multiplar from "../../images/clients/private/multiplar-logo.jpg";
+import nycomed from "../../images/clients/private/nycomed-logo.jpg";
+import odebrecht from "../../images/clients/private/odebrecht-logo.jpg";
+import paqueta from "../../images/clients/private/paqueta-logo.jpg";
+import pfizer from "../../images/clients/private/pfizer-logo.jpg";
+import procerg from "../../images/clients/private/procerg-logo.jpg";
+import sicredi from "../../images/clients/private/sicredi-logo.jpg";
+import solvi from "../../images/clients/private/solvi-logo.jpg";
+import stihl from "../../images/clients/private/stihl-logo.jpg";
+import trt4 from "../../images/clients/private/trt4-logo.jpg";
+import unimed from "../../images/clients/private/unimed-logo.jpg";
 
 const Container = tw.div`relative`;
-
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
 `;
 const Heading = tw(SectionHeading)`w-full`;
-
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 px-6 flex`}
 `;
@@ -80,7 +86,37 @@ export default () => {
 
   const cardsPolitics = [
     {
-      imageSrc: agrale,
+      imageSrc: dem,
+    },
+    {
+      imageSrc: pdt,
+    },
+    {
+      imageSrc: phs,
+    },
+    {
+      imageSrc: pmdb,
+    },
+    {
+      imageSrc: pp,
+    },
+    {
+      imageSrc: pps,
+    },
+    {
+      imageSrc: prb,
+    },
+    {
+      imageSrc: psb,
+    },
+    {
+      imageSrc: psdb,
+    },
+    {
+      imageSrc: ptb,
+    },
+    {
+      imageSrc: pv,
     },
   ];
 
@@ -92,43 +128,55 @@ export default () => {
       imageSrc: band,
     },
     {
-      imageSrc: "",
+      imageSrc: braskem,
     },
     {
-      imageSrc: "",
+      imageSrc: unimed,
     },
     {
-      imageSrc: "",
+      imageSrc: correio,
     },
     {
-      imageSrc: "",
+      imageSrc: detranrs,
     },
     {
-      imageSrc: "",
+      imageSrc: sicredi,
     },
     {
-      imageSrc: "",
+      imageSrc: fiergs,
     },
     {
-      imageSrc: "",
+      imageSrc: morya,
     },
     {
-      imageSrc: "",
+      imageSrc: multiplar,
     },
     {
-      imageSrc: "",
+      imageSrc: competence,
     },
     {
-      imageSrc: "",
+      imageSrc: nycomed,
     },
     {
-      imageSrc: "",
+      imageSrc: odebrecht,
     },
     {
-      imageSrc: "",
+      imageSrc: paqueta,
     },
     {
-      imageSrc: "",
+      imageSrc: pfizer,
+    },
+    {
+      imageSrc: procerg,
+    },
+    {
+      imageSrc: stihl,
+    },
+    {
+      imageSrc: solvi,
+    },
+    {
+      imageSrc: trt4,
     },
   ];
 
@@ -136,16 +184,13 @@ export default () => {
     <Container>
       <ThreeColumnContainer>
         <Heading>
-          Quem <span tw="text-primary-500">Confia</span> na Gente
-        </Heading>
-        <Heading>
-          Na <span tw="text-primary-300">Politica</span>
+          Na <span tw="text-primary-400">Política</span>
         </Heading>
         {cardsPolitics.map((card, i) => (
           <Column key={i}>
             <Card>
               <span>
-                <img src={card.imageSrc} alt="" />
+                <img src={card.imageSrc} alt="logotipo de partidos políticos" />
               </span>
             </Card>
           </Column>
@@ -153,13 +198,13 @@ export default () => {
       </ThreeColumnContainer>
       <ThreeColumnContainer>
         <Heading>
-          No <span tw="text-primary-300">Privado</span>
+          No <span tw="text-primary-400">Privado</span>
         </Heading>
         {cardsPrivate.map((card, i) => (
           <Column key={i}>
             <Card>
               <span>
-                <img src={card.imageSrc} alt="" />
+                <img src={card.imageSrc} alt="logotipo de empresas privadas" />
               </span>
             </Card>
           </Column>
