@@ -22,7 +22,7 @@ export default () => {
         heading="Somos referência na região sul do país."
         buttonRounded={false}
         description="Temos mais de 20 anos de experiência. Oferecemos a ferramenta estratégica para a tomada de decisão do cliente de acordo com que pensa seu público-alvo."
-        primaryButtonUrl="/midia"
+        // primaryButtonUrl="/midia"
         primaryButtonText="Estamos na Mídia"
         imageSrc="https://images.unsplash.com/photo-1553013746-fd5454da7078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />

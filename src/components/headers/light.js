@@ -106,10 +106,12 @@ export default ({
     collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
-      <img src={logo} alt="logo" />
-      Instituto Methodus
-    </LogoLink>
+    <Link exact to="/">
+      <LogoLink>
+        <img src={logo} alt="logo" />
+        Instituto Methodus
+      </LogoLink>
+    </Link>
   );
 
   logoLink = logoLink || defaultLogoLink;

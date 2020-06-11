@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import {
@@ -55,7 +56,7 @@ export default ({
   ),
   description = "Somos mais do que um instituto de pesquisas. Somos observadores do comportamento humano, gostamos de ouvir as pessoas e entender exatamente o que elas querem de um produto ou de um candidato. Nosso trabalho é personalizado e contamos com uma equipe experiente de recrutadores e com tecnologia de ponta.",
   primaryButtonText = "Saiba Mais",
-  primaryButtonUrl = "/sobre",
+  // primaryButtonUrl = "/sobre",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -108,9 +109,9 @@ export default ({
                 </Statistic>
               ))}
             </Statistics>
-            <PrimaryButton as="a" href={primaryButtonUrl}>
-              {primaryButtonText}
-            </PrimaryButton>
+            <Link exact to="/sobre">
+              <PrimaryButton>{primaryButtonText}</PrimaryButton>
+            </Link>
           </TextContent>
         </TextColumn>
       </TwoColumn>

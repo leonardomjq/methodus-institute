@@ -70,7 +70,7 @@ export default ({
   ),
   description = "Acompanhe alguns de nossos trabalhos que apareceram na midia gaucha e nacional.",
   linkText = "Veja Todos",
-  linkUrl = "/midia",
+  // linkUrl = "/midia",
   cardLinkText = "Veja Este Projeto",
   textOnLeft = false,
 }) => {
@@ -108,9 +108,11 @@ export default ({
               <Subheading>{subheading}</Subheading>
               <HeadingTitle>{headingHtmlComponent}</HeadingTitle>
               <HeadingDescription>{description}</HeadingDescription>
-              <PrimaryLink href={linkUrl}>
-                {linkText} <ArrowRightIcon />
-              </PrimaryLink>
+              <Link exat to="/midia">
+                <PrimaryLink>
+                  {linkText} <ArrowRightIcon />
+                </PrimaryLink>
+              </Link>
             </HeadingInfoContainer>
           </HeadingColumn>
           {cards.map((card, index) => (

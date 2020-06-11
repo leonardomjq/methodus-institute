@@ -6,6 +6,8 @@ import {
   SectionHeading,
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
+
+import { Link } from "react-router-dom";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
@@ -84,13 +86,11 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <PrimaryButton
-              buttonRounded={buttonRounded}
-              as="a"
-              href={primaryButtonUrl}
-            >
-              {primaryButtonText}
-            </PrimaryButton>
+            <Link exato to={primaryButtonUrl}>
+              <PrimaryButton buttonRounded={buttonRounded} as="a">
+                {primaryButtonText}
+              </PrimaryButton>
+            </Link>
           </TextContent>
         </TextColumn>
       </TwoColumn>
