@@ -66,11 +66,13 @@ export const defaultLinks = [
       <Link to="/clientes">Clientes</Link>
     </NavLink>
     <NavLink>
-      <Link to="/faleconosco">Fale Conosco</Link>
-    </NavLink>
-
-    <NavLink>
       <Link to="/midia">Na Mídia</Link>
+    </NavLink>
+    <NavLink>
+      <Link to="/blog">Blog</Link>
+    </NavLink>
+    <NavLink>
+      <Link to="/faleconosco">Fale Conosco</Link>
     </NavLink>
   </NavLinks>,
   <NavLinks key={2}>

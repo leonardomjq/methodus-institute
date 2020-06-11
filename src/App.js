@@ -8,8 +8,9 @@ import { useLocation } from "react-router-dom";
 
 import About from "pages/About";
 import Clients from "pages/Clients";
-import Contact from "pages/Contact";
 import Midia from "pages/Midia";
+import Blog from "pages/Blog";
+import Contact from "pages/Contact";
 import Home from "pages/Home";
 
 // makes the Route scroll to top
@@ -61,8 +62,9 @@ function App() {
           <Switch>
             <Route exact path="/sobre" component={About} />
             <Route exact path="/clientes" component={Clients} />
-            <Route exact path="/faleconosco" component={Contact} />
             <Route exact path="/midia" component={Midia} />
+            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/faleconosco" component={Contact} />
             <Route exact path="/" component={Home} />
           </Switch>
         </Router>

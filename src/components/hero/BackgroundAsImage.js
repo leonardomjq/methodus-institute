@@ -42,7 +42,7 @@ const Heading = styled.h1`
 `;
 
 const SlantedBackground = styled.span`
-  ${tw`relative text-primary-600 px-4 -mx-4 py-2`}
+  ${tw`relative text-primary-500 px-4 -mx-4 py-2`}
   &::before {
     content: "";
     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}

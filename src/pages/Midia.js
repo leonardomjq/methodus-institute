@@ -45,16 +45,6 @@ const Title = tw.div`mt-1 font-black text-2xl text-gray-900 group-hover:text-pri
 const Description = tw.div``;
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
-// const getPlaceholderPost = () => ({
-//   imageSrc:
-//     "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-//   category: "Travel Guide",
-//   date: "April 19, 2020",
-//   title: "Visit the beautiful Alps in Switzerland",
-//   description:
-//     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-//   url: "https://reddit.com",
-// });
 
 export default ({
   headingText = "Estamos em todos os lugares",
@@ -72,7 +62,42 @@ export default ({
         "https://folhadomate.com/livre/pesquisa-indica-que-a-populacao-ainda-esta-despreocupada-com-o-coronavirus/",
       featured: true,
     },
-    // getPlaceholderPost(),
+    {
+      imageSrc:
+        "https://vermelho.org.br/wp-content/uploads/2019/10/29745981438_6000b39ec9_o135481.jpg",
+      category: "Governo",
+      date: "08/10/2019",
+      title: "Manuela D’Ávila lidera pesquisa à Prefeitura de Porto Alegre",
+      description:
+        "Segundo pesquisa do Instituto Methodus, Manu pontua em primeiro lugar na capital gaúcha, tanto na sondagem espontânea quanto na estimulada.",
+      url:
+        "https://vermelho.org.br/2019/10/08/manuela-davila-lidera-pesquisa-a-prefeitura-de-porto-alegre-2/",
+      featured: true,
+    },
+    {
+      imageSrc:
+        "https://www.correiodopovo.com.br/image/policy:1.323292:1557879843/Prefeitura-Pagamento.jpg?f=2x1&$p$f=719fdff&w=2400&$w=d2ad2f2",
+      category: "População",
+      date: "24/12/2019",
+      title: "Números mostram disputa pela Prefeitura de Porto Alegre",
+      description:
+        "Instituto Methodus avaliou a intenção de votos em cinco simulações eleitorais para o pleito de outubro de 2020.",
+      url:
+        "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/n%C3%BAmeros-mostram-disputa-pela-prefeitura-de-porto-alegre-1.388865",
+      featured: true,
+    },
+    {
+      imageSrc:
+        "https://www.correiodopovo.com.br/image/policy:1.383620:1575037043/.jpg?f=2x1&$p$f=7d891a5&w=2400&$w=d2ad2f2",
+      category: "Jornal",
+      date: "18/03/2020",
+      title: "Leite tem 57% e Sartori, 42%, diz Instituto Methodus",
+      description:
+        "A pesquisa, encomendada pela TV Bandeirantes, foi realizada entre os dias 20 e 23 de outubro, e entrevistou 1500 pessoas em todo o estado.",
+      url:
+        "https://www.jornaldocomercio.com/_conteudo/politica/2018/10/654386-leite-tem-57-e-sartori-42--diz-instituto-methodus.html",
+      featured: true,
+    },
   ],
 }) => {
   const [visible, setVisible] = useState(7);

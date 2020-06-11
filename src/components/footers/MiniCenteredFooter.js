@@ -47,6 +47,12 @@ export default () => {
             <Link exact to="/clientes">
               <NavLink>Clientes</NavLink>
             </Link>
+            <Link exact to="/midia">
+              <NavLink>Na Mídia</NavLink>
+            </Link>
+            <Link exact to="/blog">
+              <NavLink>Blog</NavLink>
+            </Link>
             <Link exact to="/faleconosco">
               <NavLink>Fale Conosco</NavLink>
             </Link>
