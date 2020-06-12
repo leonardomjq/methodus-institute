@@ -57,7 +57,8 @@ export default ({
       title: "Além do Bem e do Mal",
       description:
         "Nietzsche considerava Além do Bem e do Mal seu livro mais importante e mais abrangente. Isso porque ele reúne aqui a maioria dos temas que desenvolveu em seu pensamento filosófico: perspectivismo, crítica à moralidade, religião, entre tantos outros.",
-      url: "https://timerse.com",
+      url:
+        "https://medium.com/@BarackObama/how-to-make-this-moment-the-turning-point-for-real-change-9fa209806067",
       featured: true,
     },
     {
