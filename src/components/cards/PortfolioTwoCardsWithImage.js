@@ -77,7 +77,7 @@ export default ({
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1563304997-8b95bace5a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+        "https://images.unsplash.com/photo-1563304997-8b95bace5a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=720&q=80",
       company: "Correio do Povo",
       type: "Pesquisa Eleitoral",
       title:
@@ -89,7 +89,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1591022360079-2f482b3e0b2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+        "https://images.unsplash.com/photo-1591022360079-2f482b3e0b2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=720&q=80",
       company: "Correio do Povo",
       type: "Pesquisa Eleitoral",
       title: "Pesquisa eleitoral em Porto Alegre - Eleições 2020",

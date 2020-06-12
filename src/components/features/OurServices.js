@@ -84,7 +84,10 @@ export default () => {
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
+                <img
+                  src={card.imageSrc || defaultCardImage}
+                  alt="illustrationsof work icons"
+                />
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>

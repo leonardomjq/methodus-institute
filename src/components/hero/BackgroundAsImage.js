@@ -78,13 +78,16 @@ export default () => {
               <br />
               <SlantedBackground>Pesquisa de Mercado</SlantedBackground>
             </Heading>
-            <Link to="/clientes">
+            <Link to="/clientes" alt="button for the list of clients">
               <PrimaryAction>Nossos Clientes</PrimaryAction>
             </Link>
           </LeftColumn>
           <RightColumn>
             {/* was video, now img */}
-            <StyledResponsiveVideoEmbed url="https://images.unsplash.com/flagged/photo-1573162915835-520ee6d112b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80" />
+            <StyledResponsiveVideoEmbed
+              url="https://images.unsplash.com/flagged/photo-1573162915835-520ee6d112b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=720&q=80"
+              alt="image of a woman working on a laptop"
+            />
           </RightColumn>
         </TwoColumn>
       </HeroContainer>

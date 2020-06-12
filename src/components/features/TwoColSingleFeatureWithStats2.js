@@ -92,7 +92,11 @@ export default ({
           {imageInsideDiv ? (
             <Image imageSrc={imageSrc} css={imageCss} />
           ) : (
-            <img src={imageSrc} css={imageCss} alt="" />
+            <img
+              src={imageSrc}
+              css={imageCss}
+              alt="illustration of data and graphics"
+            />
           )}
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
         </ImageColumn>
@@ -109,7 +113,7 @@ export default ({
                 </Statistic>
               ))}
             </Statistics>
-            <Link exact to="/sobre">
+            <Link exact to="/sobre" alt="button linking to About page">
               <PrimaryButton>{primaryButtonText}</PrimaryButton>
             </Link>
           </TextContent>
