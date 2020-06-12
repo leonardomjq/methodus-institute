@@ -110,7 +110,7 @@ export default ({
   const defaultLogoLink = (
     <Link exact to="/">
       <LogoLink>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="company logo" />
         Instituto Methodus
       </LogoLink>
     </Link>

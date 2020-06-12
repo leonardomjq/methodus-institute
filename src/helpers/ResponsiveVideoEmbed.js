@@ -26,7 +26,7 @@ export default ({ url, background = "black", className = "video" }) => {
         }}
         src={url}
         frameBorder="0"
-        alt="a focused person walking"
+        alt="focused person reading"
       />
     </div>
   );

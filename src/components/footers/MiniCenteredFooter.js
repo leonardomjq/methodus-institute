@@ -34,7 +34,7 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
+            <LogoImg src={logo} alt="company's logo" />
             <LogoText>Instituto Methodus</LogoText>
           </LogoContainer>
           <LinksContainer>
@@ -60,13 +60,17 @@ export default () => {
           <SocialLinksContainer>
             <SocialLink
               href="https://www.facebook.com/institutomethodus"
+              name="facebook logo"
               target="_blank"
+              rel="noopener"
             >
               <FacebookIcon />
             </SocialLink>
             <SocialLink
               href="https://www.linkedin.com/company/instituto-methodus/"
+              name="linkedin logo"
               target="_blank"
+              rel="noopener"
             >
               <LinkedInIcon />
             </SocialLink>
