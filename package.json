@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "cogo-toast": "^4.2.3",
     "feather-icons": "^4.28.0",
-    "framer-motion": "^1.11.0",
+    "framer-motion": "^1.11.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
@@ -20,7 +20,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.1",
     "tailwindcss": "^1.4.6",
-    "twin.macro": "^1.4.0",
+    "twin.macro": "^1.4.1",
     "use-in-view": "^1.0.15"
   },
   "scripts": {

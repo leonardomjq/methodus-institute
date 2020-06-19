@@ -1,10 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "style.css";
 import "tailwindcss/dist/base.css";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 import About from "pages/About";
 import Clients from "pages/Clients";
@@ -26,7 +26,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <main>
+    <main className="media">
       <Helmet>
         <meta
           name="description"
